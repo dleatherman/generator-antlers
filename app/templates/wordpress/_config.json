@@ -1,0 +1,9 @@
+{
+  "local": {
+    "db_name": "<%= _.slugify(name) %>_wordpress",
+    "username": "root",
+    "password": "root",
+    "site_url": "http://localhost:8888",
+    "host": "localhost"
+  }
+}

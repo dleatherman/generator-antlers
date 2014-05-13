@@ -1,0 +1,16 @@
+{
+  "name": "<%= _.slugify(name) %>",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showup": "~0.0.2",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.0"
+  }
+}

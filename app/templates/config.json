@@ -1,0 +1,10 @@
+{
+  "name": "<%= name %>",
+  "local": {
+    "db_name": "<%= name %>_wordpress",
+    "username": "root",
+    "password": "root",
+    "site_url": "http://localhost:8888",
+    "host": "localhost"
+  }
+}
