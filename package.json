@@ -1,6 +1,6 @@
 {
   "name": "generator-antlers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -25,7 +25,6 @@
   "dependencies": {
     "yeoman-generator": "~0.16.0",
     "chalk": "~0.4.0",
-    "wrench": "~1.4.4",
     "simple-git": "~0.2.0",
     "fs-extra": "^0.8.1"
   },
