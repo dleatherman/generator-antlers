@@ -1,4 +1,4 @@
-# generator-antlers [![Build Status](https://secure.travis-ci.org/dleatherman/generator-antlers.png?branch=master)](https://travis-ci.org/dleatherman/generator-antlers)
+# generator-antlers
 
 > [Yeoman](http://yeoman.io) generator
 
