@@ -79,14 +79,15 @@ var AntlersGenerator = yeoman.generators.Base.extend({
 
     // Format specific options and directory setups
     if(this.format === 'wordpress') {
+      var dirName = this._.slugify(this.name);
       this.mkdir('./db/');
-      this.mkdir('./wp-content/themes/' + this._.slugify(this.name));
-      this.mkdir('./wp-content/themes/' + this._.slugify(this.name) + '/css/less/');
-      this.mkdir('./wp-content/themes/' + this._.slugify(this.name) + '/js/dist/');
-      this.mkdir('./wp-content/themes/' + this._.slugify(this.name) + '/js/src/');
-      this.mkdir('./wp-content/themes/' + this._.slugify(this.name) + '/js/lib/');
-      this.copy('style.less', './wp-content/themes/' + this._.slugify(this.name) + '/css/less/style.less');
-      this.copy('app.js', './wp-content/themes/' + this._.slugify(this.name) + '/js/src/app.js');
+      this.mkdir('./wp-content/themes/' + dirName);
+      this.mkdir('./wp-content/themes/' + dirName + '/css/less/');
+      this.mkdir('./wp-content/themes/' + dirName + '/js/dist/');
+      this.mkdir('./wp-content/themes/' + dirName + '/js/src/');
+      this.mkdir('./wp-content/themes/' + dirName + '/js/lib/');
+      this.copy('style.less', './wp-content/themes/' + dirName + '/css/less/style.less');
+      this.copy('app.js', './wp-content/themes/' + dirName + '/js/src/app.js');
       this.template(this.format + '/_config.json', './config.json');
     } else {
       this.mkdir('./css/less/');
